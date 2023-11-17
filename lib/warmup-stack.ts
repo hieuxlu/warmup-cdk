@@ -27,7 +27,6 @@ export class WarmupStack extends Stack {
       entry: path.join(__dirname, '../src/warmup.handler.ts'),
       functionName: 'warmup-handler',
       runtime: lambda.Runtime.NODEJS_18_X,
-      handler: 'warmup.handler',
       timeout: Duration.seconds(60),
       memorySize: 512,
       tracing: lambda.Tracing.ACTIVE,
