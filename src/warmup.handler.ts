@@ -37,3 +37,5 @@ export const handler = async (event: IPayload) => {
     }),
   );
 };
+// https://github.com/aws-observability/aws-otel-lambda/issues/99
+module.exports = { handler }
